@@ -1,0 +1,123 @@
+form{
+    display: none;
+}
+
+.title{
+    background-color: #F4DBF7;
+}
+
+body{
+    font-size: 8pt;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.reduire{
+    width: 40%;
+    margin-left: 10%;
+}
+
+.theme{
+    margin: 20px;
+    background-color: #3F0868;
+    width: 98%; 
+    border-radius: 13px;  
+    padding:20px 0;   
+}
+
+.theme>h3{
+    color:white;
+    text-align: center;
+}
+
+#titre{
+    text-align: center;
+}
+
+img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+res{
+    float: left;
+}
+
+
+.form-group{
+    width: 60%;
+    margin-left: 20%;
+}
+
+#formulaire{
+    display: none;   
+    color:purple;
+   
+}
+
+.presentations{
+    margin-top: 50px;
+    position: absolute;
+    height:auto;
+}
+.presentation{
+    width: 80%;
+    margin-left: 10%;
+    top:50px;
+}
+
+/* #ajouter_presentation{
+    float: right;
+    margin-top: -50px;
+    margin-right: 20px;
+} */
+
+#ajouter_formulaire{
+    margin-left: 73%;
+}
+
+.btn-warning{
+    position: relative;
+    margin:5px;
+    float:right;
+}
+
+.ui-state-default
+{
+    background: rgb(239, 203, 243)
+}
+
+#annuler_formulaire{
+    float: right;
+    margin-right:380px;
+    margin-top:-33px;
+    background-color: palevioletred;
+}
+
+.btn-danger{
+   float: right;
+   position: relative;
+   top:-80px;
+   right:30px;
+   background-color: purple;
+}
+
+.ui-state-active {
+    background: #d30e91;
+}
+
+.btn-default{
+    background-color: purple;
+    color:white;
+    float: right;
+    margin-top: 10px;
+}
+
+#titre{
+    color:purple;
+}
+
+ul, li{
+    list-style-type: none;
+}
+
+

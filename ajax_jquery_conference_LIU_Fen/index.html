@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- tous les scripts de JS --> 
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.8.21/themes/base/jquery-ui.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="http://static.jquery.com/ui/css/demo-docs-theme/ui.theme.css" type="text/css" media="all" />
+    <script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
+    
+    <script
+      src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+      integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+      crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="js/ajax.js"></script>
+   
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <!-- CSS --> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Programmation client-serveur - TP2</title>
+    <meta name="keywords" content="presentation"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+</head>
+<body>
+    <header>
+        <div id="titre"><h1>TP2 - Presentation de conferences</h1>
+        </div>
+        <img src="images/banner.jpg" alt="banner"> 
+        <div id="btn_ajout">
+            <button type="button" class="btn btn-danger" onclick="ajoutPresentation()">Ajouter une presentation</button>
+        </div>      
+    </header>
+
+    <div id="res" class="container">
+    </div>
+    
+
+    <!-- Formulaire d'ajout de présentation-->
+    
+    <div id="formulaire">
+    
+        <!-- <form method="post" action=""> -->
+            <input type="hidden" id="id" />
+      
+            <div class = "form-group"> 
+                <label for="titre_form">Titre de la présentation:</label>
+                <input class = "form-control" type="text" placeholder="titre" name="titre_form" id="titre_form" />
+            </div>
+
+            <div class = "form-group"> 
+                <label for="description">Résumé de la présentation:</label>
+                <input class = "form-control" type="text" placeholder="résumé de la présentation" name="description" id="description" />
+            </div>
+
+            <div class = "form-group"> 
+                <label for="thematique">Thématique:</label>
+                <input class = "form-control" type="text" placeholder="thématique" name="thematique" id="thematique" />
+            </div>
+
+            <div class = "form-group"> 
+                <label for="date">Date:</label>
+                <input class = "form-control" type="text" placeholder="date" name="date_presentation" pattern = "[0-9]{4}-(0[1-9]|1[012])-(0[0-9]|1[0-9]|2[0-9]|3[01])" id="date_presentation" required/>
+            </div>
+
+            <div class = "form-group"> 
+                <label for="heure_debut">Heure début:</label>
+                <input class = "form-control" type="text" placeholder="heure debut" pattern="([01]?[0-9]|2[0-3]):[0-5][0-9]" name="heure_debut" id="heure_debut" />
+            </div>
+
+            <div class = "form-group"> 
+                <label for="heure_fin">Heure fin:</label>
+                <input class = "form-control" type="text" placeholder="heure fin" pattern="([01]?[0-9]|2[0-3]):[0-5][0-9]" name="heure_fin" id="heure_fin" />
+            </div>
+
+            <div class = "form-group"> 
+                <label for="salle">Salle de la présentation:</label>
+                <input class = "form-control" type="text" placeholder="salle de présentation" name="salle_presentation" id="salle_presentation" />
+            </div>
+
+            <div class = "form-group"> 
+                <label for="presentateur">Présentateur:</label>
+                <input class = "form-control" type="text" placeholder="presentateur" name="presentateur" id="presentateur" />
+            </div>
+
+            <div class = "form-group"> 
+                <label for="titre">Institution du présentateur:</label>
+                <input class = "form-control" type="text" placeholder="institution de présentateur" name="institution_presentateur" id="institution_presentateur" />
+            </div>
+            
+            <button type="submit" name="envoyer" class="btn btn-envoi" id="ajouter_formulaire">Envoyer</button>
+        <!-- </form>  -->
+        <button name="annuler" class="btn btn-default" id="annuler_formulaire" onclick="annuler()">Annuler</button>
+    </div>
+</body>
+</html>
