@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+	<title>Exercice</title>
+	<meta charset="utf-8">
+	<meta name="viewimage" content="initial-scale=1.0">	
+    
+    
+    <script src="data/produit.js"></script>
+    <script src="src/catalogue.js"></script>
+    
+    <script>
+        window.addEventListener('load', ()=>{ 
+            
+            MonApp.afficher();    
+           
+        }, false);
+            
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+    <style type="text/css">
+
+    </style>
+    
+</head>
+
+<body>
+
+    <div id="bandeau">
+        <form>
+            <p>Veuillez choisir la mode d'affichage: </p>
+        <input type="radio" id="vignette" name="affichage" value="vignette" checked><label for="affichage1">Vignette</label>
+        <input type="radio" id="liste" name="affichage" value="liste"><label for="affichage2">Liste</label>
+        </form>
+        <br><br><br>
+        <div id="shopping">Panier: <span id="panier"></span> produits</div>
+        <div id="nbpage">
+            <p>Nombre de pages à afficher :</p>
+            <select id="choix">
+                <option value=12> 12 produits / page </option>
+                <option value=24> 24 produits / page </option>
+                <option value=36> 36 produits / page </option>
+                <option value=0> Tous les produits </option>
+            </select> 
+        </div> 
+
+    </div>
+
+
+   
+
+    <div id= "listeProduit"></div><br>
+
+    <div id= "pagination"></div><br>
+
+
+
+    <footer>Copyright © 2018 LIU Fen</footer>
+    
+<script>
+    
+</script>
+</body>
+</html>

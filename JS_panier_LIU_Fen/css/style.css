@@ -1,0 +1,130 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#listeProduit{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 5%; 
+}
+
+.produit{
+    width: 15%;
+    height: auto;
+    margin:3%;
+    border: 1px solid grey;
+    padding: 10px;
+    font-size: 10pt;
+    text-align: center; 
+}
+
+#shopping{
+    text-align: right;
+}
+
+#panier{
+    color: fuchsia;
+}
+
+#nbpage
+{
+    clear: both;
+}
+.nom{
+    font-size: 15pt;
+}
+
+.image img{
+    width: 90%;
+    margin: 20px;
+}
+
+form{
+    float: left;
+}
+
+#bandeau{
+    background-color:rgb(20, 46, 133);
+    color:white;
+    width: 84%;
+    margin:0 auto;
+    padding: 15px;
+}
+
+
+.btn{
+    background-color: teal;
+    
+}
+
+#pagination{
+    text-align: center;
+}
+
+
+.liste{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 40px;
+    margin-top:10px;
+    font-size: 11pt;
+    align-content: flex-end;
+    
+}
+
+.btn_page{
+    display:inline-block;
+}
+.liste .image{
+    order: -2; 
+}
+
+.liste .nom{
+    margin:10px;
+    font-size: 11pt;
+   
+}
+
+.liste .description{
+    margin:10px; 
+}
+
+.liste .prix{
+    margin:10px; 
+}
+
+.liste .categorie{
+    margin:10px; 
+}
+
+.liste img{
+    height: 100%;
+    width: 60px;
+    margin-top:0; 
+}
+
+.btn_achat{
+   background-color: aqua;
+}
+
+.liste .nom{
+    order: -1;
+}
+
+.vignette{
+    display: flex;
+    flex-direction: column;
+}
+
+.prix{
+    color: blue;
+}
+
+footer{
+    text-align: center;
+    margin: 25px;
+    color:grey;
+}
